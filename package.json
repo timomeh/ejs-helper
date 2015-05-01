@@ -1,0 +1,26 @@
+{
+  "name": "ejs-helper",
+  "version": "0.0.0",
+  "description": "Template helper functions for ejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timomeh/ejs-helper.git"
+  },
+  "keywords": [
+    "ejs",
+    "express",
+    "viewhelper",
+    "helper",
+    "view"
+  ],
+  "author": "Timo Mämecke <timo@51seven.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timomeh/ejs-helper/issues"
+  },
+  "homepage": "https://github.com/timomeh/ejs-helper"
+}
