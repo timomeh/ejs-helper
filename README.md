@@ -108,7 +108,7 @@ The above configuration is ignored if absolute url is provided. eg:
 addScript('footer', 'https://cdnjs.cloudflare.com/ajax/libs/require.min.js')
 ```
 OR
-````js
+```js
 addScript('footer', '//cdnjs.cloudflare.com/ajax/libs/require.min.js')
 ```
 OR
