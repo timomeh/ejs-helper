@@ -100,19 +100,19 @@ The rendered HTML will look like this:
 * `urlArgs` are extra query string arguments appended to relative path URLs
 
 The above configuration is ignored if absolute url is provided. eg:
-```
+```js
 addScript('footer', 'https://cdnjs.cloudflare.com/ajax/libs/require.min.js')
 ```
 OR
-````
+````js
 addScript('footer', '//cdnjs.cloudflare.com/ajax/libs/require.min.js')
 ```
 OR
-```
+```js
 addScript('footer', 'http//cdnjs.cloudflare.com/ajax/libs/equire.min.js')
 ```
-Then the original url is used and in the second case, when `scripts('footer')`
-is used it will result to:
+Then the original url is used and in the second case when `scripts('footer')`
+is called, no matter what configuration is used, it will result to:
 ```html
 <script src="//cdnjs.cloudflare.com/ajax/libs/require.min.js"></script>
 ```
