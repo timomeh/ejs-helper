@@ -1,5 +1,9 @@
 # EJS Helper
 
+<a href="https://www.npmjs.com/package/ejs-helper">
+  <img src="https://img.shields.io/npm/v/ejs-helper.svg" alt="ejs-helper on npm" />
+</a>
+
 EJS Helper is a collection of functions to have a better template including experience in [Express](https://github.com/strongloop/express).
 
 Works with Express `4.x` and EJS `2.x`.
