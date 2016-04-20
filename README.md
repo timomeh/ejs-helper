@@ -1,5 +1,9 @@
 # EJS Helper
 
+<a href="https://www.npmjs.com/package/ejs-helper">
+  <img src="https://img.shields.io/npm/v/ejs-helper.svg" alt="ejs-helper on npm" />
+</a>
+
 EJS Helper is a collection of functions to have a better template including experience in [Express](https://github.com/strongloop/express).
 
 Works with Express `4.x` and EJS `2.x`.
@@ -19,7 +23,8 @@ var ejsHelper = require('ejs-helper');
 
 app.use(ejsHelper({
     cssPath: '/static/css/',
-    jsPath: '/static/js/'
+    jsPath: '/static/js/',
+    urlArgs: 'v='+requie("package.json").version+'&awesomeness=true'
 }));
 ```
 
@@ -96,6 +101,32 @@ The rendered HTML will look like this:
 
 * `cssPath` will be prepended to the filename of the CSS href
 * `jsPath` will be prepended to the filename of the script src
+* `urlArgs` are extra query string arguments appended to relative path URLs
+
+The above configuration is ignored if absolute url is provided. eg:
+
+```js
+addScript('footer', 'https://cdnjs.cloudflare.com/ajax/libs/require.min.js')
+```
+
+OR
+
+```js
+addScript('footer', '//cdnjs.cloudflare.com/ajax/libs/require.min.js')
+```
+
+OR
+
+```js
+addScript('footer', 'http//cdnjs.cloudflare.com/ajax/libs/equire.min.js')
+```
+
+Then the original url is used and for example in the second case when `scripts('footer')`
+is called, no matter what configuration is used, it will result to:
+
+```html
+<script src="//cdnjs.cloudflare.com/ajax/libs/require.min.js"></script>
+```
 
 ## Methods
 
