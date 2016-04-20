@@ -1,6 +1,6 @@
 {
   "name": "ejs-helper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Template helper functions for ejs",
   "main": "index.js",
   "scripts": {
