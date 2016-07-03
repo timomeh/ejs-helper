@@ -1,5 +1,9 @@
 # EJS Helper
 
+> **Hey, developer! This project is *unmaintained*. Since I'm not using EJS in any project anymore, I have no interest in maintaining it. Feel free to open a [Pull Request](https://github.com/timomeh/ejs-helper/pulls), if you'll want to fix something or add a fancy feature. kthxbye**
+> 
+> Also a big thanks to [Andreas Galazis](https://github.com/agalazis) for adding new features from time to time.
+
 <a href="https://www.npmjs.com/package/ejs-helper">
   <img src="https://img.shields.io/npm/v/ejs-helper.svg" alt="ejs-helper on npm" />
 </a>
